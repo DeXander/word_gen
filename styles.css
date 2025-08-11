@@ -1,0 +1,72 @@
+/* Wildberries стиль */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.wb-container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(123, 51, 212, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+.mode-switcher {
+    margin-bottom: 20px;
+}
+
+#modeToggle {
+    background: #7B33D4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+#modeToggle:hover {
+    background: #9A5CFF;
+}
+
+.word-display {
+    margin: 30px 0;
+    min-height: 80px;
+}
+
+.word-box {
+    background: #f5f0ff;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #7B33D4;
+    transition: opacity 0.5s ease;
+}
+
+.wb-button {
+    background: linear-gradient(90deg, #7B33D4, #9A5CFF);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.wb-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(123, 51, 212, 0.3);
+}
