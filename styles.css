@@ -5,68 +5,66 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     color: #333;
+    padding: 20px;
 }
 
 .wb-container {
     text-align: center;
     background: white;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(123, 51, 212, 0.1);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 6px 30px rgba(123, 51, 212, 0.15);
     width: 90%;
-    max-width: 500px;
+    max-width: 800px; /* Увеличен максимальный размер */
+    transform: scale(1.5); /* Увеличение в 1.5 раза */
+    transform-origin: center top;
+    margin: 40px 0;
 }
 
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .wb-container {
+        transform: none;
+        width: 95%;
+        padding: 30px 20px;
+        margin: 20px 0;
+        max-width: 100%;
+    }
+    
+    .word-box {
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    .wb-button {
+        padding: 12px 24px;
+    }
+}
+
+/* Остальные стили остаются прежними */
 .mode-switcher {
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Увеличен отступ */
 }
 
 #modeToggle {
-    background: #7B33D4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s;
-}
-
-#modeToggle:hover {
-    background: #9A5CFF;
+    padding: 12px 24px; /* Увеличен размер кнопки */
+    font-size: 18px;
 }
 
 .word-display {
-    margin: 30px 0;
-    min-height: 80px;
+    margin: 40px 0; /* Увеличен отступ */
+    min-height: 120px; /* Увеличен минимальный размер */
 }
 
 .word-box {
-    background: #f5f0ff;
-    padding: 20px;
-    border-radius: 12px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #7B33D4;
-    transition: opacity 0.5s ease;
+    font-size: 28px; /* Увеличен размер текста */
+    padding: 25px;
 }
 
 .wb-button {
-    background: linear-gradient(90deg, #7B33D4, #9A5CFF);
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.wb-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(123, 51, 212, 0.3);
+    padding: 18px 36px; /* Увеличен размер кнопки */
+    font-size: 18px;
 }
